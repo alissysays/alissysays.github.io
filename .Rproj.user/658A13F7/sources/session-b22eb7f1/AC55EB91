@@ -3,7 +3,7 @@
     "path": "~/About N/portfolio_nisrina/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "2481787800",
+    "hash": "1372380291",
     "contents": "",
     "dirty": false,
     "created": 1770049940540.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "2,18",
+        "cursorPosition": "5,25",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1770050562,
+    "lastKnownWriteTime": 1770052232,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1770050562440,
+    "last_content_update": 1770052232227,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,11 +1,19 @@
 ---
-title: "portfolio_nisrina"
+title: "Alissy Projects"
 ---
 
-This is a Quarto website.
+Hi, I'm Alissy, undergraduate Statistics student at UNJ. I'm interested in Data Science, Machine Learning, and Statistical Analysis.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+College Projects
+
+1\. Energy Efficiency Analysis (Python)
+
+Using Regression Tree to estimate insurance costs.
+
+2\. K-Means vs. K-Medoids Clustering (R)
+
+Comparison of algorithms on the RFM dataset.
 
 ```{r}
-1 + 1
+mean(19,10,20,5)
 ```
