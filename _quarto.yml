@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "portfolio_nisrina"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: reg_tree.ipynb
+        text: Regression Tree  
+      - about.qmd
+
+format:
+  html:
+    theme:
+      - darkly
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual
+
