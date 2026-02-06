@@ -1,19 +1,27 @@
 ---
-title: "Alissy Projects"
+title: "Nisrina Alissy"
+image: foto_profil.jpg  # Simpan fotomu di folder project
+about:
+  template: trestles # Pilihan template: jolla, trestles, broadside
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/nisrinaalissy
+    - icon: github
+      text: Github
+      href: https://github.com/alissysays
+    - icon: envelope
+      text: Email
+      href: mailto:alissy.nisrina@gmail.com
 ---
 
 Hi, I'm Alissy, undergraduate Statistics student at UNJ. I'm interested in Data Science, Machine Learning, and Statistical Analysis.
 
-College Projects
+I am currently exploring the use of R and Python to solve data-driven business problems.
 
-1\. Energy Efficiency Analysis (Python)
+## Skills
+* **Programming:** R, Python, SQL
+* **Tools:** Microsoft Excel, RStudio, Google Colab
 
-Using Regression Tree to estimate insurance costs.
-
-2\. K-Means vs. K-Medoids Clustering (R)
-
-Comparison of algorithms on the RFM dataset.
-
-```{r}
-mean(19,10,20,5)
-```
+---

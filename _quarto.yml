@@ -7,17 +7,33 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
-      - href: reg_tree.ipynb
-        text: Regression Tree  
-      - about.qmd
+        text: About Me
+      
+      # --- Tambahkan ini agar halaman galeri projects muncul ---
+      - href: projects.qmd
+        text: Projects 
+
+      # --- Perbaikan format untuk About (biar lebih konsisten) ---
+      #- href: about.qmd
+       # text: About Me
+        
+      - text: "College Projects"
+        menu:
+          - href: posts/reg_tree.ipynb
+            text: Regression Tree
+          # - href: file_lain.ipynb
+            #text: Proyek Lain
 
 format:
   html:
     theme:
-      - cosmo
+      light: flatly
+      dark: darkly
+    include-dark-mode-switch: true
     css: styles.css
     toc: true
+    mainfont: Inter
+    monofont: JetBrains Mono
 
 editor: visual
 

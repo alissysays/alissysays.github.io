@@ -1,0 +1,7 @@
+---
+title: "Portfolio"
+listing:
+  contents: posts  # (Pastikan kamu simpan file .ipynb atau .qmd proyekmu di folder bernama 'posts')
+  type: grid       # Tampilan kotak-kotak kartu
+  categories: true # Bisa filter berdasarkan kategori
+---
