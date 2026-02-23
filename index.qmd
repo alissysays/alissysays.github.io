@@ -13,7 +13,7 @@ about:
       href: https://github.com/alissysays
     - icon: envelope
       text: Email
-      href: mailto:alissy.nisrina@gmail.com
+      href: "mailto:alissy.nisrina@gmail.com"
 ---
 
 Hi, I'm Alissy, undergraduate Statistics student at UNJ. I'm interested in Data Science, Machine Learning, and Statistical Analysis.
@@ -21,7 +21,8 @@ Hi, I'm Alissy, undergraduate Statistics student at UNJ. I'm interested in Data 
 I am currently exploring the use of R and Python to solve data-driven business problems.
 
 ## Skills
-* **Programming:** R, Python, SQL
-* **Tools:** Microsoft Excel, RStudio, Google Colab
 
----
+-   **Programming:** R, Python, SQL
+-   **Tools:** Microsoft Excel, RStudio, Google Colab
+
+------------------------------------------------------------------------
