@@ -1,0 +1,22 @@
+---
+title: "Sales Dashboard"
+description: "Memvisualisasikan performa penjualan secara real-time menggunakan Google Data Studio (Looker Studio)."
+categories: [Visualization, Google Data Studio]
+---
+
+## Overview
+Memvisualisasikan performa penjualan secara real-time menggunakan Google Data Studio (Looker Studio). Dashboard ini membantu dalam memantau tren pendapatan, pencapaian target, serta efektivitas penjualan berdasarkan kategori produk untuk mendukung pengambilan keputusan yang lebih cepat dan berbasis data.
+
+## Dashboard
+
+```{=html}
+<div style="background:#111827; border:1px solid rgba(196,162,82,0.18);">
+  <iframe 
+    src="https://datastudio.google.com/embed/reporting/657e7b50-34eb-4c8d-8df9-70695eeb601d/page/jBKYD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"
+    width="100%" 
+    height="600px"
+    style="border:none; display:block;"
+    allowfullscreen>
+  </iframe>
+</div>
+```

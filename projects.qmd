@@ -1,7 +1,59 @@
 ---
-title: "Portfolio"
+title: ""
+format:
+  html:
+    page-layout: full
 listing:
-  contents: posts  # (Pastikan kamu simpan file .ipynb atau .qmd proyekmu di folder bernama 'posts')
-  type: grid       # Tampilan kotak-kotak kartu
-  categories: true # Bisa filter berdasarkan kategori
+  contents: posts
+  type: grid
+  categories: true
+  sort: "date desc"
+  fields: [title, description, categories, date]
 ---
+```{=html}
+<div style="max-width:900px; margin:3.5rem auto 0; padding:0 2rem;">
+  <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#c4a252; opacity:0.65; margin-bottom:0.5rem;">// all work</p>
+  <h1 style="font-family:'DM Serif Display',serif; font-size:36px; font-weight:400; color:#f0ebe0; margin-bottom:0.5rem;">Projects</h1>
+  <p style="color:#9a9588; font-size:14px; margin-bottom:2.5rem; max-width:100%;">Kumpulan proyek analisis data, machine learning, dan statistik.</p>
+  <hr style="border:none; border-top:1px solid rgba(196,162,82,0.15); margin-bottom:2.5rem;">
+</div>
+
+<!-- Featured: Shiny Dashboard -->
+<div style="max-width:900px; margin:0 auto 2rem; padding:0 2rem;">
+  <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#c4a252; opacity:0.65; margin-bottom:1rem;">// featured dashboard</p>
+  <div style="background:#111827; border:1px solid rgba(196,162,82,0.18);">
+    <div style="padding:0.6rem 1rem; border-bottom:1px solid rgba(196,162,82,0.15); display:flex; align-items:center; gap:0.5rem;">
+      <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; opacity:0.6; letter-spacing:0.12em;">// live · logistic regression dashboard</span>
+    </div>
+    <iframe 
+      src="https://anakpenyu.shinyapps.io/projek_uas/" 
+      width="100%" 
+      height="580px"
+      style="border:none; display:block;">
+    </iframe>
+  </div>
+</div>
+
+<!-- Featured: Google Data Studio Dashboard -->
+<div id="looker-dashboard" style="max-width:900px; margin:0 auto 2rem; padding:0 2rem;">
+  <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#c4a252; opacity:0.65; margin-bottom:1rem;">// featured dashboard</p>
+  <div style="background:#111827; border:1px solid rgba(196,162,82,0.18);">
+    <div style="padding:0.6rem 1rem; border-bottom:1px solid rgba(196,162,82,0.15);">
+      <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; opacity:0.6; letter-spacing:0.12em;">// live · sales dashboard</span>
+    </div>
+    <iframe 
+      src="https://datastudio.google.com/embed/reporting/657e7b50-34eb-4c8d-8df9-70695eeb601d/page/1"
+      width="100%" 
+      height="580px"
+      style="border:none; display:block;"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<!-- Label sebelum grid listing -->
+<div style="max-width:900px; margin:3rem auto 0; padding:0 2rem;">
+  <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#c4a252; opacity:0.65; margin-bottom:1rem;">// all projects</p>
+</div>
+```
+

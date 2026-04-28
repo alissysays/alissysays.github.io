@@ -1,39 +1,23 @@
 project:
   type: website
-  output-dir: docs
 
 website:
-  title: "Alissy Projects"
+  title: "Alissy Says"
   navbar:
     left:
       - href: index.qmd
-        text: About Me
-      
-      # --- Tambahkan ini agar halaman galeri projects muncul ---
+        text: Home
       - href: projects.qmd
-        text: Projects 
-
-      # --- Perbaikan format untuk About (biar lebih konsisten) ---
-      #- href: about.qmd
-       # text: About Me
-        
-      - text: "College Projects"
-        menu:
-          - href: posts/reg_tree.ipynb
-            text: Regression Tree
-          # - href: file_lain.ipynb
-            #text: Proyek Lain
+        text: Projects
+    background: "#0a0f1e"
+    foreground: "#9a9588"
+    pinned: true
 
 format:
   html:
-    theme:
-      light: flatly
-      dark: darkly
-    include-dark-mode-switch: true
+    theme: darkly
     css: styles.css
-    toc: true
-    mainfont: Inter
-    monofont: JetBrains Mono
-
-editor: visual
-
+    include-after-body: script.html
+    toc: false
+    mainfont: "DM Sans"
+    monofont: "JetBrains Mono"
