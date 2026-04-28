@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Nisrina Alissy – Alissy Projects</title>
+<title>Alissy Says</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,7 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -34,15 +33,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4662a63493b7c0877026317192d81cd1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-f7ca031b09fd8d27dddd64db535c886b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-4662a63493b7c0877026317192d81cd1.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-2e9887671f427056273a7e89ec71ed2d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,169 +71,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
-    const toggleBodyColorMode = (bsSheetEl) => {
-      const mode = bsSheetEl.getAttribute("data-mode");
-      const bodyEl = window.document.querySelector("body");
-      if (mode === "dark") {
-        bodyEl.classList.add("quarto-dark");
-        bodyEl.classList.remove("quarto-light");
-      } else {
-        bodyEl.classList.add("quarto-light");
-        bodyEl.classList.remove("quarto-dark");
-      }
-    }
-    const toggleBodyColorPrimary = () => {
-      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
-      if (bsSheetEl) {
-        toggleBodyColorMode(bsSheetEl);
-      }
-    }
-    const setColorSchemeToggle = (alternate) => {
-      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-      for (let i=0; i < toggles.length; i++) {
-        const toggle = toggles[i];
-        if (toggle) {
-          if (alternate) {
-            toggle.classList.add("alternate");
-          } else {
-            toggle.classList.remove("alternate");
-          }
-        }
-      }
-    };
-    const toggleColorMode = (alternate) => {
-      // Switch the stylesheets
-      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
-      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-      manageTransitions('#quarto-margin-sidebar .nav-link', false);
-      if (alternate) {
-        // note: dark is layered on light, we don't disable primary!
-        enableStylesheet(alternateStylesheets);
-        for (const sheetNode of alternateStylesheets) {
-          if (sheetNode.id === "quarto-bootstrap") {
-            toggleBodyColorMode(sheetNode);
-          }
-        }
-      } else {
-        disableStylesheet(alternateStylesheets);
-        enableStylesheet(primaryStylesheets)
-        toggleBodyColorPrimary();
-      }
-      manageTransitions('#quarto-margin-sidebar .nav-link', true);
-      // Switch the toggles
-      setColorSchemeToggle(alternate)
-      // Hack to workaround the fact that safari doesn't
-      // properly recolor the scrollbar when toggling (#1455)
-      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-        manageTransitions("body", false);
-        window.scrollTo(0, 1);
-        setTimeout(() => {
-          window.scrollTo(0, 0);
-          manageTransitions("body", true);
-        }, 40);
-      }
-    }
-    const disableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        stylesheet.rel = 'disabled-stylesheet';
-      }
-    }
-    const enableStylesheet = (stylesheets) => {
-      for (let i=0; i < stylesheets.length; i++) {
-        const stylesheet = stylesheets[i];
-        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
-          stylesheet.rel = 'stylesheet';
-        }
-      }
-    }
-    const manageTransitions = (selector, allowTransitions) => {
-      const els = window.document.querySelectorAll(selector);
-      for (let i=0; i < els.length; i++) {
-        const el = els[i];
-        if (allowTransitions) {
-          el.classList.remove('notransition');
-        } else {
-          el.classList.add('notransition');
-        }
-      }
-    }
-    const isFileUrl = () => {
-      return window.location.protocol === 'file:';
-    }
-    const hasAlternateSentinel = () => {
-      let styleSentinel = getColorSchemeSentinel();
-      if (styleSentinel !== null) {
-        return styleSentinel === "alternate";
-      } else {
-        return false;
-      }
-    }
-    const setStyleSentinel = (alternate) => {
-      const value = alternate ? "alternate" : "default";
-      if (!isFileUrl()) {
-        window.localStorage.setItem("quarto-color-scheme", value);
-      } else {
-        localAlternateSentinel = value;
-      }
-    }
-    const getColorSchemeSentinel = () => {
-      if (!isFileUrl()) {
-        const storageValue = window.localStorage.getItem("quarto-color-scheme");
-        return storageValue != null ? storageValue : localAlternateSentinel;
-      } else {
-        return localAlternateSentinel;
-      }
-    }
-    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-      let newTheme = '';
-      if(authorPrefersDark) {
-        newTheme = isAlternate ? baseTheme : alternateTheme;
-      } else {
-        newTheme = isAlternate ? alternateTheme : baseTheme;
-      }
-      const changeGiscusTheme = () => {
-        // From: https://github.com/giscus/giscus/issues/336
-        const sendMessage = (message) => {
-          const iframe = document.querySelector('iframe.giscus-frame');
-          if (!iframe) return;
-          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-        }
-        sendMessage({
-          setConfig: {
-            theme: newTheme
-          }
-        });
-      }
-      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-      if (isGiscussLoaded) {
-        changeGiscusTheme();
-      }
-    };
-    const authorPrefersDark = false;
-    const darkModeDefault = authorPrefersDark;
-      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
-    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-    // Dark / light mode switch
-    window.quartoToggleColorScheme = () => {
-      // Read the current dark / light value
-      let toAlternate = !hasAlternateSentinel();
-      toggleColorMode(toAlternate);
-      setStyleSentinel(toAlternate);
-      toggleGiscusIfUsed(toAlternate, darkModeDefault);
-      window.dispatchEvent(new Event('resize'));
-    };
-    // Switch to dark mode if need be
-    if (hasAlternateSentinel()) {
-      toggleColorMode(true);
-    } else {
-      toggleColorMode(false);
-    }
-  </script>
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -245,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Alissy Projects</span>
+    <span class="navbar-title">Alissy Says</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -256,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">About Me</span></a>
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./projects.html"> 
@@ -265,83 +99,169 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-  <ul>
-  <li><a href="#skills" id="toc-skills" class="nav-link active" data-scroll-target="#skills">Skills</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="foto_profil.jpg" class="about-image
-  round " style="height: 20em; width: 20em;">
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Nisrina Alissy</h1>
-</div>
-<div class="quarto-title-meta">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
+<!-- ── HERO / ABOUT ─────────────────────────────────── -->
+<div style="display:flex; gap:3rem; align-items:flex-start; max-width:860px; margin:4rem auto 0; padding:0 2rem; flex-wrap:wrap;">
+
+  <div style="flex-shrink:0; text-align:center;">
+    <img src="foto_profil.jpg" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:2px solid rgba(196,162,82,0.3); filter:brightness(0.95);">
+    <div style="margin-top:1.25rem; display:flex; flex-direction:column; gap:0.5rem;">
+      <a href="https://linkedin.com/in/nisrinaalissy" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.07em; text-transform:uppercase; color:#c4a252; background:rgba(196,162,82,0.1); border:1px solid rgba(196,162,82,0.25); padding:6px 14px; display:flex; align-items:center; gap:6px; justify-content:center;">
+        <i class="bi bi-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/alissysays" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.07em; text-transform:uppercase; color:#c4a252; background:rgba(196,162,82,0.1); border:1px solid rgba(196,162,82,0.25); padding:6px 14px; display:flex; align-items:center; gap:6px; justify-content:center;">
+        <i class="bi bi-github"></i> GitHub
+      </a>
+      <a href="mailto:alissy.nisrina@gmail.com" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.07em; text-transform:uppercase; color:#c4a252; background:rgba(196,162,82,0.1); border:1px solid rgba(196,162,82,0.25); padding:6px 14px; display:flex; align-items:center; gap:6px; justify-content:center;">
+        <i class="bi bi-envelope"></i> Email
+      </a>
+    </div>
   </div>
-</header>
-    <div class="about-links">
-  <a href="https://linkedin.com/in/nisrinaalissy" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/alissysays" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="mailto:alissy.nisrina@gmail.com" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Email</span>
-  </a>
-</div>
+
+  <div style="flex:1; min-width:260px;">
+    <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#c4a252; opacity:0.65; margin-bottom:0.5rem;">// about me</p>
+    <h1 style="font-family:'DM Serif Display',serif; font-size:38px; font-weight:400; color:#f0ebe0; margin-bottom:1rem;">Nisrina Alissy</h1>
+    <p style="color:#9a9588; font-size:15px; line-height:1.85; margin-bottom:1.5rem; max-width:100%;">
+      Hi, I'm <strong style="color:#f0ebe0;">Alissy</strong> — undergraduate Statistics student at UNJ. 
+      I'm interested in data science, machine learning, and statistical analysis, 
+      currently exploring R and Python to solve data-driven business problems.
+    </p>
+
+    <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#c4a252; opacity:0.65; margin-bottom:0.75rem;">// skills</p>
+    <div style="margin-bottom:0.6rem;">
+      <span style="color:#f0ebe0; font-size:13px; font-weight:500;">Programming</span>
+      <div style="margin-top:0.35rem; display:flex; gap:0.4rem; flex-wrap:wrap;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; background:rgba(196,162,82,0.08); border:1px solid rgba(196,162,82,0.2); padding:3px 9px;">R</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; background:rgba(196,162,82,0.08); border:1px solid rgba(196,162,82,0.2); padding:3px 9px;">Python</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; background:rgba(196,162,82,0.08); border:1px solid rgba(196,162,82,0.2); padding:3px 9px;">SQL</span>
+      </div>
+    </div>
+    <div>
+      <span style="color:#f0ebe0; font-size:13px; font-weight:500;">Tools</span>
+      <div style="margin-top:0.35rem; display:flex; gap:0.4rem; flex-wrap:wrap;">
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px;">Microsoft Excel</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px;">RStudio</span>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px;">Google Colab</span>
+      </div>
+    </div>
   </div>
-  <div class="about-contents"><main class="content" id="quarto-document-content">
-
-
-<p>Hi, I’m Alissy, undergraduate Statistics student at UNJ. I’m interested in Data Science, Machine Learning, and Statistical Analysis.</p>
-<p>I am currently exploring the use of R and Python to solve data-driven business problems.</p>
-<section id="skills" class="level2">
-<h2 data-anchor-id="skills">Skills</h2>
-<ul>
-<li><strong>Programming:</strong> R, Python, SQL</li>
-<li><strong>Tools:</strong> Microsoft Excel, RStudio, Google Colab</li>
-</ul>
-<hr>
-
-
-</section>
-</main></div>
 </div>
- <!-- /main -->
+
+<!-- ── DIVIDER ───────────────────────────────────────── -->
+<div style="max-width:860px; margin:3.5rem auto 0; padding:0 2rem;">
+  <hr style="border:none; border-top:1px solid rgba(196,162,82,0.15); margin:0;">
+</div>
+
+<!-- ── FEATURED PROJECTS ─────────────────────────────── -->
+<div style="max-width:860px; margin:3.5rem auto; padding:0 2rem;">
+
+  <p style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#c4a252; opacity:0.65; margin-bottom:0.5rem;">// selected work</p>
+  <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:2rem;">
+    <h2 style="font-family:'DM Serif Display',serif; font-size:28px; font-weight:400; color:#f0ebe0; margin:0;" class="anchored">Featured Projects</h2>
+    <a href="./projects.html" style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.07em; text-transform:uppercase; color:#c4a252; opacity:0.8;">View all →</a>
+  </div>
+
+  <!-- Card 1 — Featured (full width) -->
+  <a href="./projects.html" style="text-decoration:none; display:block; margin-bottom:1.25rem;">
+    <div style="background:#111827; border:1px solid rgba(196,162,82,0.18); padding:1.75rem; position:relative; overflow:hidden; transition:border-color 0.25s;" onmouseover="this.style.borderColor='rgba(196,162,82,0.4)'; this.querySelector('.bar').style.height='100%';" onmouseout="this.style.borderColor='rgba(196,162,82,0.18)'; this.querySelector('.bar').style.height='0';">
+      <div class="bar" style="position:absolute; top:0; left:0; width:3px; height:0; background:#c4a252; transition:height 0.3s;"></div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start;">
+        <div>
+          <div style="margin-bottom:0.75rem;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; background:rgba(196,162,82,0.08); border:1px solid rgba(196,162,82,0.2); padding:3px 9px; letter-spacing:0.06em; text-transform:uppercase; margin-right:4px;">Statistics</span>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; background:rgba(196,162,82,0.08); border:1px solid rgba(196,162,82,0.2); padding:3px 9px; letter-spacing:0.06em; text-transform:uppercase;">Machine Learning</span>
+          </div>
+          <h3 style="font-family:'DM Serif Display',serif; font-size:20px; font-weight:400; color:#f0ebe0; margin-bottom:0.75rem; line-height:1.3;" class="anchored">Logistic Regression Dashboard</h3>
+          <p style="color:#9a9588; font-size:13px; line-height:1.75; margin:0;">
+            Dashboard interaktif berbasis Shiny untuk eksplorasi model regresi logistik. 
+            Pengguna dapat mengatur parameter model dan melihat hasil klasifikasi secara real-time.
+          </p>
+        </div>
+        <div>
+          <div style="margin-bottom:0.75rem;">
+            <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px; margin-right:4px;">R</span>
+            <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px;">Shiny</span>
+          </div>
+          <p style="color:#9a9588; font-size:13px; line-height:1.75; margin:0 0 1rem;">
+            Di-deploy di ShinyApps.io dan terintegrasi langsung di halaman Projects.
+          </p>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c4a252; letter-spacing:0.05em;">Lihat proyek →</span>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Card 2 & 3 — Side by side -->
+  <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.25rem;">
+
+    <!-- Ganti dengan proyek kedua kamu -->
+    <a href="./posts/reg_tree.html" style="text-decoration:none;">
+      <div style="background:#111827; border:1px solid rgba(196,162,82,0.18); padding:1.5rem; position:relative; overflow:hidden; height:100%;" onmouseover="this.style.borderColor='rgba(196,162,82,0.4)'; this.querySelector('.bar').style.height='100%';" onmouseout="this.style.borderColor='rgba(196,162,82,0.18)'; this.querySelector('.bar').style.height='0';">
+        <div class="bar" style="position:absolute; top:0; left:0; width:3px; height:0; background:#c4a252; transition:height 0.3s;"></div>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; background:rgba(196,162,82,0.08); border:1px solid rgba(196,162,82,0.2); padding:3px 9px; letter-spacing:0.06em; text-transform:uppercase;">Data Analysis</span>
+        <h3 style="font-family:'DM Serif Display',serif; font-size:18px; font-weight:400; color:#f0ebe0; margin:0.75rem 0 0.5rem; line-height:1.3;" class="anchored">Decision Tree Regression</h3>
+        <p style="color:#9a9588; font-size:13px; line-height:1.75; margin:0 0 1rem;">Proyek ini bertujuan untuk memprediksi biaya asuransi (charges) menggunakan metode Decision Tree Regression. Data yang digunakan merupakan data asuransi.</p>
+        <div>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px; margin-right:4px;">Python</span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px;">Pandas</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Ganti dengan proyek ketiga kamu -->
+    <a href="./projects.html#looker-dashboard" style="text-decoration:none;">
+      <div style="background:#111827; border:1px solid rgba(196,162,82,0.18); padding:1.5rem; position:relative; overflow:hidden; height:100%;" onmouseover="this.style.borderColor='rgba(196,162,82,0.4)'; this.querySelector('.bar').style.height='100%';" onmouseout="this.style.borderColor='rgba(196,162,82,0.18)'; this.querySelector('.bar').style.height='0';">
+        <div class="bar" style="position:absolute; top:0; left:0; width:3px; height:0; background:#c4a252; transition:height 0.3s;"></div>
+        <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#c4a252; background:rgba(196,162,82,0.08); border:1px solid rgba(196,162,82,0.2); padding:3px 9px; letter-spacing:0.06em; text-transform:uppercase;">Visualization</span>
+        <h3 style="font-family:'DM Serif Display',serif; font-size:18px; font-weight:400; color:#f0ebe0; margin:0.75rem 0 0.5rem; line-height:1.3;" class="anchored">Sales Dashboard</h3>
+        <p style="color:#9a9588; font-size:13px; line-height:1.75; margin:0 0 1rem;">Memvisualisasikan performa penjualan secara real-time menggunakan Google Data Studio (Looker Studio).</p>
+        <div>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px; margin-right:4px;">Google Data Studio</span>
+          <span style="font-family:'JetBrains Mono',monospace; font-size:10px; color:#9a9588; background:rgba(154,149,136,0.07); border:1px solid rgba(154,149,136,0.15); padding:3px 9px;">Google Sheets</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<!-- ── QUOTE ─────────────────────────────────────────── -->
+<div style="max-width:860px; margin:0 auto 5rem; padding:0 2rem;">
+  <div style="border-left:2px solid rgba(196,162,82,0.4); padding:1.5rem 2rem; margin-top:3.5rem;">
+    <p style="font-family:'DM Serif Display',serif; font-size:20px; font-style:italic; color:#f0ebe0; line-height:1.6; margin:0 0 0.75rem; max-width:100%;">
+      "When faced with true sorrow, people lose even the strength to shed tears."
+    </p>
+    <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#c4a252; opacity:0.7; letter-spacing:0.07em;">— Uketsu, Strange Pictures</span>
+  </div>
+</div>
+
+
+
+</main> <!-- /main -->
+<script src="js/scroll-animations.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    // Ensure there is a toggle, if there isn't float one in the top right
-    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-      const a = window.document.createElement('a');
-      a.classList.add('top-right');
-      a.classList.add('quarto-color-scheme-toggle');
-      a.href = "";
-      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-      const i = window.document.createElement("i");
-      i.classList.add('bi');
-      a.appendChild(i);
-      window.document.body.appendChild(a);
-    }
-    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
